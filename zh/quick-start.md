@@ -33,9 +33,17 @@ docker run -d \
 ```
 下载很慢的话，参考这里：https://github.com/DaoCloud/public-image-mirror/issues/2328 配置镜像加速（已验证可用）
 ```shell
-"registry-mirrors":[
-    "https://mirror.tuna.tsinghua.edu.cn/docker/"
-]
+{
+  "registry-mirrors": [
+    "https://docker.nastool.de",
+    "https://docker.1ms.run",
+    "https://docker.1panel.live",
+    "https://hub1.nat.tf",
+    "https://docker.1panel.top",
+    "https://dockerpull.org",
+    "https://docker.13140521.xyz"
+  ]
+}
 ```
 
 ## 三、部署BioLab客户端服务
@@ -48,14 +56,8 @@ docker run -d \
 ```
 
 
-## 二、获取生信分析算法
+## 四、获取分析算法
 
 ```shell
 docker pull biohubx/qcstat:v0.1.0
-```
-一般docker官方的镜像库下载都会很慢，配置一下国内镜像加速(清华大学镜像加速)
-```shell
-"registry-mirrors":[
-    "https://mirror.tuna.tsinghua.edu.cn/docker/"
-]
 ```
